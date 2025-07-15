@@ -1,5 +1,8 @@
+
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Landing from './pages/Home/Home'
+
+import About from './pages/Home/About'
 import Dashboard from './pages/Dashboard'
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -11,6 +14,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Landing />} />
+        <Route path="/About" element={<About />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/" element={<Home />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
@@ -19,4 +23,5 @@ function App() {
   );
 }
 
-export default App;
+export default App
+
