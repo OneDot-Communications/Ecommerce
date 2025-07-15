@@ -1,6 +1,8 @@
 
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Landing from './pages/Home/Home'
+import Profile from './pages/Home/Profile'
+import './App.css'
 
 import About from './pages/Home/About'
 import Dashboard from './pages/Dashboard'
@@ -14,6 +16,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Landing />} />
+        <Route path="/Profile" element={<Profile />} />
         <Route path="/About" element={<About />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/" element={<Home />} />
